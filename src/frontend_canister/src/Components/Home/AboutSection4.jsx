@@ -3,71 +3,61 @@ import CollegeGirl from '../../../assets/images/CollegeGirl.png'
 import { useTranslation } from 'react-i18next';
 const AboutSection4 = () => {
     const { t } = useTranslation();
+    const listVideo = [
+        {
+            img: "https://pbs.twimg.com/media/GRERffDaAAA3dOt?format=jpg&name=large",
+            title: "Developer Courses",
+            difficulty: "Beginner",
+        },
+        {
+            img: "https://pbs.twimg.com/media/GRERffDaAAA3dOt?format=jpg&name=large",
+            title: "Basics Bootcamp",
+            difficulty: "Beginner",
+        },
+        {
+            img: "https://pbs.twimg.com/media/GRERffDaAAA3dOt?format=jpg&name=large",
+            title: "ICVR",
+            difficulty: "Advance",
+        }
+    ]
     return (
-        <>
-           <section id='features' className="about-section bg-white  w-full mx-auto "> 
-            <div className="mx-auto">
-            <h2 className='text-4xl text-center mt-40 '>
-                <span className='font-poppins text-[#2F327D] font-[700]'> {t('about.section4.our')} </span>
-                <span className='font-nunitoSans text-[#7B61FF] font-[700]'>{t('about.section4.Features')} </span>
+
+        <section id='features' className="about-section bg-white  w-full flex justify-center">
+            <div className="container flex flex-col gap-12 px-8">
 
 
-            </h2>
-
-            <h2 className='text-center mt-4'>
-                <span
-                    className='text-2xl font-[400] font-poppins  text-[#696984]
-                    mt-[400px]'
-                >{t('about.section4.featuresDescription')}</span>
-            </h2>
-
-            <div className='mx-auto flex flex-col lg:flex-row lg:justify-center xl:flex-row xl:justify-center items-center mt-[3.75rem]'>
-
-                <div className='xl:w-1/2  w-full text-center lg:text-left  justify-center 
-                  content-center space-y-4  xl:grid xl:grid-cols-1
-                '>
-
-                    <h2 className='text-3xl w-full lg:w-[70%] space-x-2 '>
-                        <span className='text-[#7B61FF] font-[600]'>
-                        {t('about.section4.tools')}
-                        </span>
-                        <span className='text-[#2F327D] font-[600]'>
-                        {t('about.section4.toolsForEducatorsAndLearners')}
-                        </span>
-                    </h2>
-
-                    <p className='text-[#696984] font-[400] text-xl font-poppins w-full lg:w-[80%] leading-8'>
-                    {t('about.section4.toolsDescription')}
-                    </p>
+                {/* 1st ============================ */}
+                <div className="flex max-lg:justify-center items-center w-full">
+                    {/* TITLE  */}
+                    <div className="flex flex-col gap-8 w-2/3 max-lg:w-full max-lg:text-center">
+                        <h2 className="text-3xl lg:text-4xl justify-center items-center">
+                            {t('about.section4.title')}
+                        </h2>
+                    </div>
                 </div>
 
-                <div className='relative justify-center items-center'>
-                    <img src={CollegeGirl} alt="classroom" className='z-50 cursor-pointer' />
+                {/* 2nd ============================ */}
+                <div className="grid grid-cols-3 gap-6">
+                    {listVideo.map((item, i) => (
+                        <div className={`w-full rounded-2xl aspect-square overflow-hidden flex flex-col justify-end relative group duration-300 transition ease-in-out shadow-lg hover:scale-110`}>
 
+                            {/* image  */}
+                            <img src={item.img} className="object-cover h-full w-full top-0 left-0" alt="" />
+
+                            {/* text  */}
+                            <div className="flex flex-col gap-3 duration-300 z-10 bg-white p-10">
+                                <p className="text-xl capitalize">{item.title}</p>
+                                <p className="text-sm text-accent3 capitalize">
+                                    {item.difficulty}
+                                </p>
+                            </div>
+                        </div>
+                    ))}
                 </div>
-                {/* <div className=' w-full mt-4 items-center flex flex-col justify-center
-                  content-center space-y-4 xl:hidden  
-                '>
-
-                    <h2 className='text-3xl w-[50%] space-x-2 text-center  '>
-                        <span className='text-[#7B61FF] font-[600]'>
-                            Tools
-                        </span>
-                        <span className='text-[#2F327D] font-[600] '>
-                            For Educators
-
-                            And Learners
-                        </span>
-                    </h2>
-
-                    <p className='text-[#696984] font-[400] text-xl font-poppins w-[100%] leading-8 text-center'>
-                        Indonesia on Chain offers a dynamic learning experience, providing comprehensive courses that demystify blockchain technology whether you're a beginner or an enthusiast.
-                    </p>
-                </div> */}
             </div>
-            </div>
-    </section>
-        </>
+
+
+        </section>
     )
 }
 

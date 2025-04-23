@@ -21,7 +21,7 @@ const Navbar = ({ setClickConnectWallet }) => {
   const [loadingDashboard, setLoadingDashboard] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const { t, i18n } = useTranslation();
-  
+
   const NavbarLinks = [
     { name: t('navbar.home'), path: "/#" },
     { name: t('navbar.features'), path: "/#features" },
@@ -79,49 +79,42 @@ const Navbar = ({ setClickConnectWallet }) => {
   };
 
   return (
-    <>
-      <nav className={`flex items-center fixed top-0 left-0 w-full z-20 transition duration-300 ease-in-out backdrop-blur-md ${shadow ? "shadow-lg" : ""}`}
-  style={{ flexDirection: menuOpen ? 'column' : 'row' }}>
-        <div className="flex justify-between w-full">
-          <div className="flex items-center justify-center ml-6 mr-2 md:ml-28">
-            <img src={IndonesiaOnChain} alt="" className="left-0 h-3/5" />
-          </div>
-          <div className="flex mr-6 md:hidden">
-            <div className="z-20 flex items-center justify-center pr-3"> <LanguageButton/> </div>
-            <button onClick={() => setMenuOpen(!menuOpen)} className="text-gray-700">
-              {menuOpen ? (
-                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="18" y1="6" x2="6" y2="18" />
-                  <line x1="6" y1="6" x2="18" y2="18" />
-                </svg>
-              ) : (
-                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="3" y1="12" x2="21" y2="12" />
-                  <line x1="3" y1="6" x2="21" y2="6" />
-                  <line x1="3" y1="18" x2="21" y2="18" />
-                </svg>
-              )}
-            </button>
-          </div>
+    <nav className={`flex items-center  justify-center fixed top-0 left-0 w-full z-20 transition duration-300 bg-white/50 ease-in-out backdrop-blur-md ${shadow ? "shadow-lg" : ""}`}
+      style={{ flexDirection: menuOpen ? 'column' : 'row' }}>
+
+
+
+      <div className="container flex justify-between w-full h-24 px-8 py-4 max-sm:h-24 max-sm:py-4 duration-300">
+        {/* logo  */}
+        <div className="flex items-center justify-start gap-5">
+          <img src={IndonesiaOnChain} alt="" className="object-cover h-full" />
         </div>
-        <div className={`hidden md:flex flex-col md:flex-row items-center md:mr-16 space-y-4 md:space-y-0 md:space-x-8`}>
-          <ul className="flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-8">
+
+        {/* side  */}
+        <div className={`hidden md:flex flex-col md:flex-row items-center`}>
+          <ul className="flex items-center gap-4">
             {NavbarLinks.map((link, index) => (
               <li key={index} className="whitespace-nowrap">
                 <HashLink
                   smooth
                   to={link.path}
-                  className={`px-4 py-2 font-poppins font-normal text-base leading-7 whitespace-nowrap ${link.path === window.location.pathname + window.location.hash ? "text-purple-600 " : ""}`}
+                  className={`font-poppins font-normal text-base whitespace-nowrap ${link.path === window.location.pathname + window.location.hash ? "text-purple-600 " : ""}`}
                 >
                   {link.name}
                 </HashLink>
               </li>
             ))}
-            <li className=""> 
-              <NavLink className="block px-4 py-2 text-base font-normal leading-7 font-poppins">
-                <LanguageButton/>
+
+
+            {/* Language  */}
+            <li className="">
+              <NavLink className="block text-base font-normal font-poppins">
+                <LanguageButton />
               </NavLink>
             </li>
+
+
+            {/* Button  */}
             {isAuthenticated && (
               <li>
                 {loadingDashboard ? (
@@ -141,7 +134,7 @@ const Navbar = ({ setClickConnectWallet }) => {
             <li>
               {!isAuthenticated ? (
                 <button
-                  className="bg-[#3400B1] w-36 lg:px-7 lg:py-3 px-2 py-4 text-white rounded-full text-sm hover:bg-white hover:text-[#3400B1] border-2 border-[#3400B1] hover:scale-105 font-bold transition-all duration-500 ease-in-out"
+                  className="bg-accent2 w-36 lg:px-7 lg:py-3 px-2 py-4 text-white rounded-full text-sm hover:scale-105 font-bold transition-all duration-500 ease-in-out"
                   onClick={() => setClickConnectWallet(true)}
                 >
                   {t('navbar.getStarted')}
@@ -155,41 +148,76 @@ const Navbar = ({ setClickConnectWallet }) => {
                 </button>
               )}
             </li>
+
+
           </ul>
         </div>
-        {/* Mobile Menu */}
-        {menuOpen && (
-          <div className="flex flex-col items-center w-screen h-screen gap-4 py-4 bg-white shadow-lg md:hidden">
-            {NavbarLinks.map((link, index) => (
-              <HashLink key={index} smooth to={link.path} className="w-full gap-2 py-2 text-center hover:bg-gray-100">
-                {link.name}
-              </HashLink>
-            ))}
-            <LanguageButton />
-            {isAuthenticated ? (
-              <>
+
+
+
+
+
+
+
+
+
+
+
+        {/* side Mobile */}
+        <div className="flex md:hidden">
+          <div className="z-20 flex items-center justify-center pr-3"> <LanguageButton /> </div>
+          <button onClick={() => setMenuOpen(!menuOpen)} className="text-gray-700">
+            {menuOpen ? (
+              <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            ) : (
+              <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <line x1="3" y1="18" x2="21" y2="18" />
+              </svg>
+            )}
+          </button>
+        </div>
+      </div>
+
+
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div className="flex flex-col items-center w-screen h-screen gap-4 py-4 bg-white shadow-lg md:hidden">
+          {NavbarLinks.map((link, index) => (
+            <HashLink key={index} smooth to={link.path} className="w-full gap-2 py-2 text-center hover:bg-gray-100">
+              {link.name}
+            </HashLink>
+          ))}
+          <LanguageButton />
+          {isAuthenticated ? (
+            <>
               <NavLink
-              to={process.env.DFX_NETWORK === "ic" ? DashboardLink?.path : `${DashboardLink?.path}?canisterId=${process.env.CANISTER_ID_FRONTEND_CANISTER}`}
-              className={({ isActive }) =>
-                `px-4 py-2 font-poppins font-normal text-base leading-7 ${isActive ? "text-purple-600 " : ""}`
-              }
-            >
-              {DashboardLink?.name}
-            </NavLink>
+                to={process.env.DFX_NETWORK === "ic" ? DashboardLink?.path : `${DashboardLink?.path}?canisterId=${process.env.CANISTER_ID_FRONTEND_CANISTER}`}
+                className={({ isActive }) =>
+                  `px-4 py-2 font-poppins font-normal text-base leading-7 ${isActive ? "text-purple-600 " : ""}`
+                }
+              >
+                {DashboardLink?.name}
+              </NavLink>
               <button onClick={handleLogout} className="py-2 mt-2 text-white bg-purple-700 w-60">
                 {t('navbar.logout')}
               </button>
-              </>
-            ) : (
-              <button onClick={() => setClickConnectWallet(true)} className="py-2 mt-2 text-white bg-purple-700 rounded w-60">
-                {t('navbar.getStarted')}
-              </button>
-            )}
-            
-          </div>
-        )}
-      </nav>
-    </>
+            </>
+          ) : (
+            <button onClick={() => setClickConnectWallet(true)} className="py-2 mt-2 text-white bg-purple-700 rounded w-60">
+              {t('navbar.getStarted')}
+            </button>
+          )}
+
+        </div>
+      )}
+    </nav>
+
   );
 };
 

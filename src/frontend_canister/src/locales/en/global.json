@@ -2,7 +2,7 @@
   "home": {
     "learning": "Learning",
     "blockchainIntro": "Blockchain is now much easier",
-    "platformIntro": "Indonesia On-Chain is a pioneering platform in Indonesia dedicated to teaching Blockchain and Entrepreneurship through an interactive, engaging experience. Gain access to Ideathons, Hackathons, and receive certifications for your newly acquired skills.",
+    "platformIntro": "Indonesia On-Chain is a pioneering platform in Indonesia dedicated to teaching Blockchain and Entrepreneurship through an interactive, engaging experience.",
     "getStarted": "Get Started",
     "logout": "Logout",
     "watchHowItWorks": "Watch how it works"
@@ -18,12 +18,12 @@
       "blockchain": "Blockchain",
       "learningPlatform": "Learning Platform",
       "platformDescription": "Indonesia On-Chain transforms your understanding of blockchain with interactive courses designed for all skill levels—from beginners to blockchain enthusiasts. Experience a dynamic and engaging learning journey tailored to demystify blockchain technology and inspire innovation.",
-      "blockchainBasicsBootcamp": "Blockchain Basics Bootcamp",
-      "masterEssentials": "Master the essentials of blockchain technology and build a strong foundation for the blockchain revolution with hands-on learning.",
-      "innovateWithBlockchain": "Innovate with Blockchain",
-      "blockchainInnovatorsHub": "Join the Blockchain Innovators Hub to collaborate on cutting-edge projects, explore emerging technologies, and network with industry enthusiasts.",
-      "empowerYourVision": "Empower Your Blockchain Vision",
-      "transformIdeas": "Transform your innovative ideas into tangible blockchain projects. This dynamic platform supports your growth from concept to execution, empowering you with the tools and community support needed to turn visionary ideas into reality."
+      "title1": "Blockchain Basics Bootcamp",
+      "description1": "Get FREE online courses from our experts and earn an official ICP certificate to showcase your blockchain skills.",
+      "title2": "Hackathon",
+      "description2": "Compete in our monthly online hackathons and win USD $1,000+ in prizes! Top participants may also secure a spot in the exclusive ICP Hacker House for even bigger rewards.",
+      "title3": "Job Opportunities, Grants & More",
+      "description3": "We connect you with top partners and opportunities within the ICP ecosystem. Land your dream job, accelerate your project with grants, and unlock even greater possibilities!"
     },
     "section2": {
       "whatIs": "What is ",
@@ -41,12 +41,7 @@
       "virtualLearningDescription": "Virtual learning meets classroom dynamism. Our platform replicates all the interactive elements of a traditional classroom, ensuring a robust and engaging educational experience from anywhere."
     },
     "section4": {
-      "our": "Our ",
-      "Features": "Features",
-      "featuresDescription": "Our extraordinary features can make blockchain learning activities more efficient and fun.",
-      "tools": "Tools ",
-      "toolsForEducatorsAndLearners": " For Educators And Learners",
-      "toolsDescription": "Indonesia on Chain offers a dynamic learning experience, providing comprehensive courses that demystify blockchain technology whether you're a beginner or an enthusiast."
+      "title": "Learn Today"
     },
     "section5": {
       "assessments": "Assessments,",
@@ -403,7 +398,7 @@
     "nationalIdTypeLabel": "National ID Type",
     "selectNationalIdTypePlaceholder": "Select National ID Type",
     "nationalIdLabel": "National ID",
-    "PassportNumber":"Passport",
+    "PassportNumber": "Passport",
     "submitButton": "Sign Up",
     "Passport": "Passport",
     "registrationSuccessToast": "Registration Successful",
@@ -552,7 +547,7 @@
     "contactUsText": "If you have any questions or concerns about these Terms, please contact us at",
     "email": "info@disruptives.io"
   },
-  "enrollstudentList":{
+  "enrollstudentList": {
     "students_enrolled": "Enrolled Students",
     "students_completed": "Completed by Students",
     "search_placeholder": "Search",
@@ -566,25 +561,25 @@
     "completed_course": "Completed Course",
     "role": "Role",
     "ongoing_courses": "Ongoing Courses"
-},
-"listofMintedCertificate":{
-  "search_placeholder": "Search",
-  "clear_button": "Clear",
-  "download_csv_button": "Download CSV",
-  "list_of_certificates": "List of Minted Certificates",
-  "sno": "SNo.",
-  "course_title": "Course Title",
-  "course_id": "Course ID",
-  "total_students": "Total Students",
-  "total_certificates": "Total Certificates"
-},
-"EducatorDashboard":{
-  "authorizedHeadingMsg":"You are an unauthorized user. Please contact the system administrator.",
-  "authorizedSmallMsg":"If you logged in by mistake, please log out and log back in as a student.",
-  "copy_msg_1":"If you want to see this dashboard, please click to copy the address below:",
-  "copy_msg_2":"Give this address to the system administrator for access."
-},
-"notFound": {
+  },
+  "listofMintedCertificate": {
+    "search_placeholder": "Search",
+    "clear_button": "Clear",
+    "download_csv_button": "Download CSV",
+    "list_of_certificates": "List of Minted Certificates",
+    "sno": "SNo.",
+    "course_title": "Course Title",
+    "course_id": "Course ID",
+    "total_students": "Total Students",
+    "total_certificates": "Total Certificates"
+  },
+  "EducatorDashboard": {
+    "authorizedHeadingMsg": "You are an unauthorized user. Please contact the system administrator.",
+    "authorizedSmallMsg": "If you logged in by mistake, please log out and log back in as a student.",
+    "copy_msg_1": "If you want to see this dashboard, please click to copy the address below:",
+    "copy_msg_2": "Give this address to the system administrator for access."
+  },
+  "notFound": {
     "title": "404",
     "subtitle": "Something's missing.",
     "description": "Sorry, we can't find that page. You'll find lots to explore on the home page.",

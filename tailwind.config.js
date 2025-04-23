@@ -25,6 +25,12 @@ module.exports = {
       xl2: "1600px",
     },
     extend: {
+      colors: {
+        accent: "#2F327D",
+        accent2: "#3400B1",
+        accent3: "#7B61FF",
+        disabled: "#464646",
+      },
       borderRadius: {
         "5rem": "5rem",
       },
@@ -51,7 +57,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      serif: ["Poppins", "sans-serif"],
+      serif: ["sans-serif"],
     },
   },
   plugins: [

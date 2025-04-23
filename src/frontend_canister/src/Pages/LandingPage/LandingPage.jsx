@@ -15,13 +15,13 @@ const LandingPage = () => {
         <main >
             <div className='w-[100%]'>
                 {/* {ClickConnectWallet && <LoginSelect setClickConnectWallet={setClickConnectWallet} />} */}
-                <Home  />
+                <Home />
             </div>
             <div>
-                <div className='lg:mx-[130px]'>
+                <div >
                     <AboutSection />
-                    <AboutSection2 />
-                    <AboutSection3 />
+                    {/* <AboutSection2 />
+                    <AboutSection3 /> */}
                     <AboutSection4 />
                     <AboutSection5 />
                     <AboutSection6 />

@@ -2,7 +2,7 @@
   "home": {
     "learning": "Belajar",
     "blockchainIntro": "Blockchain kini lebih mudah",
-    "platformIntro": "Indonesia On-Chain adalah platform perintis di Indonesia yang didedikasikan untuk mengajarkan Blockchain dan Kewirausahaan melalui pengalaman interaktif dan menarik. Dapatkan akses ke Ideathons, Hackathons, dan sertifikasi untuk keterampilan yang baru Anda peroleh.",
+    "platformIntro": "Indonesia On-Chain adalah platform perintis di Indonesia yang didedikasikan untuk mengajarkan Blockchain dan Kewirausahaan melalui pengalaman interaktif dan menarik.",
     "getStarted": "Mulai",
     "logout": "Keluar",
     "watchHowItWorks": "Tutorial Mendaftar"
@@ -18,12 +18,12 @@
       "blockchain": "Platform",
       "learningPlatform": "Pembelajaran Blockchain",
       "platformDescription": "Indonesia On-Chain mengubah pemahaman Anda tentang blockchain dengan kursus interaktif yang dirancang untuk semua tingkat keahlian—dari pemula hingga penggemar blockchain. Rasakan perjalanan belajar yang dinamis dan menarik yang disesuaikan untuk menjelaskan teknologi blockchain dan menginspirasi inovasi.",
-      "blockchainBasicsBootcamp": "Bootcamp Dasar Blockchain",
-      "masterEssentials": "Kuasai dasar-dasar teknologi blockchain dan bangun fondasi yang kuat untuk revolusi blockchain dengan pembelajaran langsung.",
-      "innovateWithBlockchain": "Inovasi dengan Blockchain",
-      "blockchainInnovatorsHub": "Bergabunglah dengan Blockchain Innovators Hub untuk berkolaborasi dalam proyek-proyek terdepan, menjelajahi teknologi-teknologi baru, dan berjejaring dengan para penggemar industri.",
-      "empowerYourVision": "Menguatkan Visi Blockchain Anda",
-      "transformIdeas": "Ubah ide-ide inovatif Anda menjadi proyek blockchain yang nyata. Platform dinamis ini mendukung perkembangan Anda dari konsep hingga eksekusi, memberdayakan Anda dengan alat dan dukungan komunitas yang diperlukan untuk mengubah ide-ide visioner menjadi kenyataan."
+      "title1": "Bootcamp Dasar Blockchain",
+      "description1": "Dapatkan kursus online GRATIS dari para ahli kami dan dapatkan sertifikat ICP resmi untuk menunjukkan keahlian blockchain Anda.",
+      "title2": "Hackathon",
+      "description2": "Bersainglah dalam hackathon online bulanan kami dan menangkan hadiah sebesar USD $1.000+! Peserta terbaik juga dapat mengamankan tempat di ICP Hacker House eksklusif untuk hadiah yang lebih besar.",
+      "title3": "Peluang Kerja, Pendanaan & Lainnya",
+      "description3": "Kami menghubungkan Anda dengan mitra-mitra terbaik dan peluang-peluang dalam ekosistem ICP. Dapatkan pekerjaan impian Anda, percepat proyek Anda dengan dana hibah, dan buka kemungkinan yang lebih besar lagi!"
     },
     "section2": {
       "whatIs": "Apa ",
@@ -41,12 +41,7 @@
       "virtualLearningDescription": "Pembelajaran virtual memenuhi dinamisme kelas. Platform kami mereplikasi semua elemen interaktif ruang kelas tradisional, memastikan pengalaman pendidikan yang kuat dan menarik dari mana saja."
     },
     "section4": {
-      "our": "Fitur ",
-      "Features": "Kami",
-      "featuresDescription": "Fitur luar biasa kami dapat membuat kegiatan pembelajaran blockchain lebih efisien dan menyenangkan.",
-      "tools": "Alat",
-      "toolsForEducatorsAndLearners": " Untuk Pendidik Dan Pelajar",
-      "toolsDescription": "Indonesia On-Chain menawarkan pengalaman belajar yang dinamis, menyediakan kursus komprehensif yang menjelaskan teknologi blockchain baik Anda pemula atau penggemar."
+      "title": "Belajar Sekarang"
     },
     "section5": {
       "assessments": "Penilaian,",
@@ -314,7 +309,7 @@
     "YouScoredmarks:": "Anda mendapatkan nilai:",
     "Submit": "Kirim",
     "AllCourses": "Semua Kursus",
-     "Processing": "Pengolahan..."
+    "Processing": "Pengolahan..."
   },
   "MyCourses": {
     "AllCourses": "Semua Kursus",
@@ -403,7 +398,7 @@
     "nationalIdTypeLabel": "Jenis ID Nasional",
     "selectNationalIdTypePlaceholder": "Pilih Jenis ID Nasional",
     "nationalIdLabel": "ID Nasional",
-    "PassportNumber":"Paspor",
+    "PassportNumber": "Paspor",
     "submitButton": "Daftar",
     "Passport": "Paspor",
     "registrationSuccessToast": "Pendaftaran Berhasil",
@@ -552,7 +547,7 @@
     "contactUsText": "Jika Anda memiliki pertanyaan atau kekhawatiran mengenai Syarat-syarat ini, silakan hubungi kami di",
     "email": "info@disruptives.io"
   },
-  "enrollstudentList":{
+  "enrollstudentList": {
     "students_enrolled": "Mahasiswa Terdaftar",
     "students_completed": "Diselesaikan oleh Siswa",
     "search_placeholder": "Cari",
@@ -566,30 +561,28 @@
     "completed_course": "Kursus Selesai",
     "role": "Peran",
     "ongoing_courses": "Kursus Berlangsung"
-},
-"listofMintedCertificate":{
-  "search_placeholder": "Cari",
-  "clear_button": "Bersihkan",
-  "download_csv_button": "Unduh CSV",
-  "list_of_certificates": "Daftar Sertifikat yang Dicetak",
-  "sno": "No.",
-  "course_title": "Judul Kursus",
-  "course_id": "ID Kursus",
-  "total_students": "Total Siswa",
-  "total_certificates": "Total Sertifikat"
-},
-"EducatorDashboard": {
-  "authorizedHeadingMsg": "Anda adalah pengguna yang tidak berwenang. Silakan hubungi administrator sistem.",
-  "authorizedSmallMsg": "Jika Anda masuk secara tidak sengaja, silakan keluar dan masuk kembali sebagai siswa.",
-  "copy_msg_1": "Jika Anda ingin melihat dasbor ini, silakan klik untuk menyalin alamat di bawah ini:",
-  "copy_msg_2": "Berikan alamat ini kepada administrator sistem untuk mendapatkan akses."
-},
-"notFound": {
+  },
+  "listofMintedCertificate": {
+    "search_placeholder": "Cari",
+    "clear_button": "Bersihkan",
+    "download_csv_button": "Unduh CSV",
+    "list_of_certificates": "Daftar Sertifikat yang Dicetak",
+    "sno": "No.",
+    "course_title": "Judul Kursus",
+    "course_id": "ID Kursus",
+    "total_students": "Total Siswa",
+    "total_certificates": "Total Sertifikat"
+  },
+  "EducatorDashboard": {
+    "authorizedHeadingMsg": "Anda adalah pengguna yang tidak berwenang. Silakan hubungi administrator sistem.",
+    "authorizedSmallMsg": "Jika Anda masuk secara tidak sengaja, silakan keluar dan masuk kembali sebagai siswa.",
+    "copy_msg_1": "Jika Anda ingin melihat dasbor ini, silakan klik untuk menyalin alamat di bawah ini:",
+    "copy_msg_2": "Berikan alamat ini kepada administrator sistem untuk mendapatkan akses."
+  },
+  "notFound": {
     "title": "404",
     "subtitle": "Ada yang hilang.",
     "description": "Maaf, kami tidak dapat menemukan halaman itu. Anda akan menemukan banyak hal untuk dijelajahi di halaman utama.",
     "backToHomepage": "Kembali ke Beranda"
   }
-
-
 }
