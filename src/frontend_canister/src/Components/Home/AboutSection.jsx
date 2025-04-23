@@ -55,7 +55,7 @@ const AboutSection = () => {
                             {/* text  */}
                             <div className="flex flex-col gap-3 duration-300 z-10 bg-white p-10">
                                 <p className="text-xl">{item.title}</p>
-                                <p className="text-sm text-disabled">
+                                <p className="text-sm text-disabled line-clamp-3 group-hover:line-clamp-none transition-all duration-300">
                                     {item.description}
                                 </p>
                             </div>

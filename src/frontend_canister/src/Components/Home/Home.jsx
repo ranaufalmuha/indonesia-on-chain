@@ -72,17 +72,17 @@ const Home = () => {
                             data-aos-delay='100'
                             data-aos-easing='ease-in-back'
                         >
-                            <div className='text-3xl md:text-4xl xl:text-5xl font-extrabold w-full flex justify-center md:mt-10 max-lg:text-center'>
-                                <p className='max-w-[600px]'>
+                            <div className='text-3xl md:text-4xl xl:text-5xl font-extrabold w-full flex max-lg:justify-center md:mt-10 max-lg:text-center'>
+                                <h2 className='max-w-[600px]'>
                                     {t('home.learning') + " " + t('home.blockchainIntro')}
-                                </p>
+                                </h2>
                             </div>
-                            <div className='font-normal text-disabled w-full flex justify-center max-lg:text-center'>
+                            <div className='font-normal text-disabled w-full flex max-lg:justify-center max-lg:text-center'>
                                 <p className='max-w-full'>
                                     {t('home.platformIntro')}
                                 </p>
                             </div>
-                            <div className="flex justify-center">
+                            <div className="flex max-lg:justify-center">
                                 <div className='flex gap-2 max-lg:gap-4 max-lg:flex-col w-full max-lg:items-center max-w-full'>
                                     {!isAuthenticated ? (
                                         <button
