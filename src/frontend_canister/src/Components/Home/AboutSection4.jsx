@@ -39,7 +39,7 @@ const AboutSection4 = () => {
                 {/* 2nd ============================ */}
                 <div className="grid grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1 gap-10 duration-300">
                     {listVideo.map((item, i) => (
-                        <div className={`w-full rounded-2xl aspect-square overflow-hidden flex flex-col justify-end relative group duration-300 transition ease-in-out shadow-lg hover:scale-110`}>
+                        <div key={i} className={`w-full rounded-2xl aspect-square overflow-hidden flex flex-col justify-end relative group duration-300 transition ease-in-out shadow-lg hover:scale-110`}>
 
                             {/* image  */}
                             <img src={item.img} className="object-cover h-full w-full top-0 left-0" alt="" />

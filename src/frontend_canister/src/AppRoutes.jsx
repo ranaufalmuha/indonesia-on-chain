@@ -40,7 +40,7 @@ const AppRoutes = [
         page: <PrivacyPolicy />,
         allowedRoles: ["student", "educator", "No Role"]
     },
-   
+
     {
         path: "/certificate-showcase/:id",
         page: <CertificateShowcase />,
